@@ -3,7 +3,7 @@ MAINTAINER atze.devries@naturalis.nl
 
 EXPOSE 9200 9300
 
-ENV VERSION 5.1.2
+ENV VERSION 5.5.0
 
 # Install Elasticsearch.
 RUN apt update && apt install -y sudo uuid-runtime && \
