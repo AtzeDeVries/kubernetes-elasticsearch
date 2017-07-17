@@ -29,4 +29,8 @@ discovery:
     ping.unicast.hosts: ${DISCOVERY_SERVICE}
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
 
-
+xpack:
+  graph.enabled: false
+  monitoring.enabled: true
+  security.enabled: false
+  watcher.enabled: false

@@ -20,6 +20,11 @@ export NODE_NAME=${NODE_NAME}
 # Prevent "Text file busy" errors
 sync
 
+# install xpack plugin
+/elasticsearch/bin/elasticsearch-plugin install --batch x-pack
+
+# install plugins
+
 if [ ! -z "${ES_PLUGINS_INSTALL}" ]; then
    OLDIFS=$IFS
    IFS=','
